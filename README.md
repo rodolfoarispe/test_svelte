@@ -1,6 +1,8 @@
 # Svelte + Vite
 
 This template should help get you started developing with Svelte in Vite.
+It includes a simple login screen that connects to the Express backend.
+After logging in you can manage your contacts from the home view.
 
 ## Recommended IDE Setup
 
