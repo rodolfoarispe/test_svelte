@@ -1,12 +1,13 @@
 <script>
     import { createEventDispatcher } from 'svelte';
+    import { baseUrl } from '../config';
   
     let username = '';
     let password = '';
     const dispatch = createEventDispatcher();
   
     const login = async () => {
-      const res = await fetch('/api/auth/login', {
+      const res = await fetch(`${baseUrl}/api/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
